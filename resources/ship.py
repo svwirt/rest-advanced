@@ -32,7 +32,7 @@ class Ship(Resource):
         ship = ShipModel.find_by_name(name)
         if ship:
             return ship.html()
-        return {'message': 'Ship not found - no content'}, 204
+        # return {'message': 'Ship not found - no content'}, 204
 
 
     @accept('application/json')
@@ -40,7 +40,7 @@ class Ship(Resource):
         ship = ShipModel.find_by_name(name)
         if ship:
             return ship.html()
-        return {'message': 'Ship not found - no content'}, 204
+        # return {'message': 'Ship not found - no content'}, 204
 
 
 
