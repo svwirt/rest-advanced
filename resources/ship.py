@@ -66,8 +66,7 @@ class Ship(Resource):
         ship = ShipModel.find_by_name(name)
         if ship:
             ship.delete_from_db()
-            return 
-
+    
         return {'message': 'Ship not found.'}, 400
 
 
